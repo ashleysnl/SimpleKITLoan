@@ -27,7 +27,7 @@
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
+      "@type": "WebApplication",
       "name": "Loan Calculator Canada",
       "applicationCategory": "FinanceApplication",
       "operatingSystem": "Web",
@@ -67,6 +67,54 @@
       supportPrimaryLabel: "Support SimpleKit",
       supportSecondaryLabel: "Explore SimpleKit"
     };
+  </script>
+  <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+          {
+              "@type": "Question",
+              "name": "How is a loan payment calculated?",
+              "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The payment is based on the loan balance, interest rate, term length, payment frequency, and compounding assumptions. With interest-bearing loans, each payment covers accrued interest plus some principal."
+              }
+          },
+          {
+              "@type": "Question",
+              "name": "What is amortization?",
+              "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Amortization is the schedule that shows how each payment is divided between interest and principal until the balance reaches zero."
+              }
+          },
+          {
+              "@type": "Question",
+              "name": "How do extra payments reduce interest?",
+              "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Extra payments lower the outstanding balance earlier, which reduces future interest charges and usually shortens the payoff period."
+              }
+          },
+          {
+              "@type": "Question",
+              "name": "Can I save my loan scenarios?",
+              "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Export all scenarios and calculator settings as a JSON file, then load the same file later to continue working."
+              }
+          },
+          {
+              "@type": "Question",
+              "name": "How do I save the report as a PDF?",
+              "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Use the Print / Save PDF button, then choose your browser’s PDF destination in the print dialog."
+              }
+          }
+      ]
+  }
   </script>
 </head>
 <body>
