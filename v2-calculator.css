@@ -1,0 +1,35 @@
+/* Loan settings and repayment overview remain adjacent on desktop; lump-sum inputs, charts and schedule follow. */
+.sk-v2[data-v2-calculator="loan-calculator"] {
+  --loan-accent:var(--v2-teal);
+  --loan-brand:var(--v2-blue);
+  --loan-brand-deep:var(--v2-navy);
+  --loan-danger:var(--v2-error);
+  --loan-ink:var(--v2-navy);
+  --loan-line:var(--v2-border);
+  --loan-line-strong:var(--v2-control-border);
+  --loan-muted:var(--v2-slate);
+  --loan-radius:var(--v2-radius-card);
+  --loan-radius-sm:var(--v2-radius-sm);
+  --loan-shadow:var(--v2-shadow-soft);
+  --loan-success:var(--v2-success);
+  --loan-surface:var(--v2-surface);
+  --loan-surface-soft:var(--v2-surface);
+  --loan-teal:var(--v2-teal);
+  --loan-warning:var(--v2-warning);
+}
+.sk-v2[data-v2-calculator="loan-calculator"] .v2c-main { row-gap:1.25rem; }
+.sk-v2[data-v2-calculator="loan-calculator"] .workspace-main-grid { gap:1.25rem; }
+.sk-v2[data-v2-calculator="loan-calculator"] .result-grid,.sk-v2[data-v2-calculator="loan-calculator"] .comparison-summary { gap:.75rem; }
+.sk-v2[data-v2-calculator="loan-calculator"] .workspace-secondary-grid,.sk-v2[data-v2-calculator="loan-calculator"] .chart-grid { gap:1rem; }
+.sk-v2[data-v2-calculator="loan-calculator"] .chart-details { background:var(--v2-surface); }
+@media(min-width:64rem) {
+ .sk-v2[data-v2-calculator="loan-calculator"] .workspace-main-grid { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(18rem,.9fr); align-items:start; }
+}
+@media(max-width:63.99rem) {
+ .sk-v2[data-v2-calculator="loan-calculator"] .workspace-main-grid { grid-template-columns:minmax(0,1fr); }
+ .sk-v2[data-v2-calculator="loan-calculator"] .summary-card-sticky { position:static; }
+}
+@media(max-width:47.99rem) {
+ .sk-v2[data-v2-calculator="loan-calculator"] :where(.form-grid,.field-grid,.advanced-grid,.input-grid,.salary-grid,.calculator-grid,.group-grid,.hero-grid,.settings-inline-grid) { grid-template-columns:minmax(0,1fr); }
+ .sk-v2[data-v2-calculator="loan-calculator"] :where(.form-actions,.toolbar-actions,.action-group,.wizard-actions,.backup-actions) { flex-wrap:wrap; }
+}

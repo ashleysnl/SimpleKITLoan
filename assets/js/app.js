@@ -1556,7 +1556,7 @@ function drawSeries(context, data, totalLength, xForIndex, yForValue, color) {
 function drawAxisLabels(context, options) {
   const { padding, width, height, yLabels, xLabels } = options;
   context.fillStyle = "#5d7087";
-  context.font = "10px sans-serif";
+  context.font = context.canvas.closest('[data-v2-calculator]') ? '12px ' + getComputedStyle(context.canvas).fontFamily : "10px sans-serif";
   yLabels.forEach((label, index) => {
     const y = padding.top + ((height - padding.top - padding.bottom) * index) / Math.max(yLabels.length - 1, 1);
     context.fillText(label, 8, y + 4);

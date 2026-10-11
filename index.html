@@ -116,13 +116,23 @@
       ]
   }
   </script>
+
+  <!-- Shared V2 components, bundled locally by the portable site build. -->
+  <link rel="stylesheet" href="https://core.simplekit.app/v2/foundations.css">
+  <link rel="stylesheet" href="https://core.simplekit.app/v2/system.css">
+  <link rel="stylesheet" href="https://core.simplekit.app/v2/calculators.css">
+  <link rel="stylesheet" href="./v2-calculator.css">
+  <script defer src="https://core.simplekit.app/v2/shell.js"></script>
 </head>
-<body>
-  <a class="skip-link" href="#mainContent">Skip to content</a>
+<body class="sk-v2" data-v2-system="1" data-v2-calculator="loan-calculator" data-v2-family="housing-debt">
+<a class="v2s-skip v2-button" href="#mainContent">Skip to content</a>
+<header class="v2s-header"><div class="v2s-wrap v2s-header-inner"><a class="v2s-brand" href="/" aria-label="SimpleKit home"><svg aria-hidden="true" focusable="false"><use href="https://core.simplekit.app/v2/icons/sprite.svg#calculator"></use></svg>SimpleKit</a><button type="button" class="v2s-menu" data-v2s-menu aria-controls="v2-loan-calculator-nav" aria-expanded="false" hidden>Menu</button><nav class="v2s-nav" id="v2-loan-calculator-nav" aria-label="Main navigation"><a href="/">Home</a><a href="/tools/" aria-current="page">Tools</a><a href="/learn/">Learn</a><a href="/about/">About</a><a href="/support/">Support</a></nav></div></header>
+
+  
 
   <div class="page-shell loan-shell">
-    <header class="hero hero-loan" aria-labelledby="pageTitle">
-      <div data-simplekit-header></div>
+    <header class="hero hero-loan v2c-hero" aria-labelledby="pageTitle">
+      
 
       <div class="hero-copy">
         <p class="eyebrow">SimpleKit Loan Calculator</p>
@@ -168,8 +178,8 @@
       </aside>
     </header>
 
-    <main id="mainContent" class="page-flow">
-      <section class="panel intro-panel no-print" aria-labelledby="introHeading">
+    <main id="mainContent" class="page-flow v2c-main" tabindex="-1">
+      <section class="panel intro-panel no-print v2c-surface" aria-labelledby="introHeading">
         <div class="panel-header">
           <div>
             <p class="section-kicker">What this calculator does</p>
@@ -199,7 +209,7 @@
         </div>
       </section>
 
-      <section id="quickGuide" class="panel quick-guide-panel no-print" aria-labelledby="quickGuideHeading">
+      <section id="quickGuide" class="panel quick-guide-panel no-print v2c-surface" aria-labelledby="quickGuideHeading">
         <div class="panel-header">
           <div>
             <p class="section-kicker">Quick guide</p>
@@ -226,7 +236,7 @@
         </div>
       </section>
 
-      <section id="workspace" class="panel workspace-panel" aria-labelledby="workspaceHeading">
+      <section id="workspace" class="panel workspace-panel v2c-surface" aria-labelledby="workspaceHeading">
         <div class="panel-header">
           <div>
             <p class="section-kicker">Main calculator workspace</p>
@@ -367,7 +377,7 @@
             </details>
 
             <section id="tab-loan" class="tab-panel is-active" role="tabpanel" aria-labelledby="tabButtonLoan">
-              <div class="input-card">
+              <div class="input-card v2c-card">
                 <div class="input-card-head">
                   <div>
                     <span class="step-kicker">Quick start</span>
@@ -451,7 +461,7 @@
             </section>
 
             <section id="tab-extra" class="tab-panel" role="tabpanel" aria-labelledby="tabButtonExtra" hidden>
-              <div class="input-card">
+              <div class="input-card v2c-card">
                 <div class="input-card-head">
                   <div>
                     <span class="step-kicker">Prepayment strategy</span>
@@ -522,7 +532,7 @@
             </section>
 
             <section id="tab-comparison" class="tab-panel" role="tabpanel" aria-labelledby="tabButtonComparison" hidden>
-              <div class="input-card">
+              <div class="input-card v2c-card">
                 <div class="input-card-head">
                   <div>
                     <span class="step-kicker">Compare scenarios</span>
@@ -540,7 +550,7 @@
             </section>
 
             <section id="tab-schedule" class="tab-panel" role="tabpanel" aria-labelledby="tabButtonSchedule" hidden>
-              <div class="input-card">
+              <div class="input-card v2c-card">
                 <div class="input-card-head">
                   <div>
                     <span class="step-kicker">Amortization</span>
@@ -562,7 +572,7 @@
             </section>
 
             <section id="tab-report" class="tab-panel" role="tabpanel" aria-labelledby="tabButtonReport" hidden>
-              <div class="input-card">
+              <div class="input-card v2c-card">
                 <div class="input-card-head">
                   <div>
                     <span class="step-kicker">Browser print flow</span>
@@ -587,7 +597,7 @@
             </section>
 
             <section id="tab-learn" class="tab-panel" role="tabpanel" aria-labelledby="tabButtonLearn" hidden>
-              <div class="input-card">
+              <div class="input-card v2c-card">
                 <div class="input-card-head">
                   <div>
                     <span class="step-kicker">Learn</span>
@@ -610,7 +620,7 @@
           </form>
 
           <div class="results-stack results-stack-primary">
-            <section id="compareStatusSection" class="results-shell compare-status-shell" aria-labelledby="compareStatusHeading">
+            <section id="compareStatusSection" class="results-shell compare-status-shell v2c-card" aria-labelledby="compareStatusHeading">
               <div class="results-block-head">
                 <div>
                   <p class="section-kicker">Comparison state</p>
@@ -621,7 +631,7 @@
               <div id="compareStatusBar" class="compare-status-bar" aria-live="polite"></div>
             </section>
 
-            <section id="summarySection" class="results-shell" aria-labelledby="summaryHeading">
+            <section id="summarySection" class="results-shell v2c-card" aria-labelledby="summaryHeading">
               <div class="results-block-head">
                 <div>
                   <p class="section-kicker">Results summary</p>
@@ -636,7 +646,7 @@
         </div>
 
         <div class="workspace-secondary-grid">
-          <section class="results-shell" aria-labelledby="chartHeading">
+          <section class="results-shell v2c-card" aria-labelledby="chartHeading">
             <div class="results-block-head">
               <div>
                 <p class="section-kicker">Charts</p>
@@ -646,7 +656,7 @@
             </div>
             <div id="chartInsight" class="chart-insight" aria-live="polite"></div>
             <div class="chart-grid">
-              <figure class="chart-card">
+              <figure class="chart-card v2c-chart">
                 <canvas id="balanceChart" width="640" height="320" aria-label="Loan balance chart" role="img"></canvas>
                 <div class="chart-legend" aria-hidden="true">
                   <span><i class="legend-swatch legend-base"></i>Base schedule</span>
@@ -656,7 +666,7 @@
               </figure>
               <details class="chart-details">
                 <summary>Open the principal vs. interest chart</summary>
-                <figure class="chart-card chart-card-secondary">
+                <figure class="chart-card chart-card-secondary v2c-chart">
                   <canvas id="breakdownChart" width="640" height="320" aria-label="Principal and interest chart" role="img"></canvas>
                   <div class="chart-legend" aria-hidden="true">
                     <span><i class="legend-swatch legend-principal"></i>Principal paid</span>
@@ -668,7 +678,7 @@
             </div>
           </section>
 
-          <section id="comparisonSection" class="results-shell" aria-labelledby="comparisonHeading">
+          <section id="comparisonSection" class="results-shell v2c-card" aria-labelledby="comparisonHeading">
             <div class="results-block-head">
               <div>
                 <p class="section-kicker">Comparison view</p>
@@ -678,7 +688,7 @@
             </div>
             <div id="comparisonCards" class="comparison-cards" aria-live="polite"></div>
             <div id="comparisonMatrix" class="comparison-matrix" aria-live="polite"></div>
-            <div class="table-shell comparison-table-shell">
+            <div class="table-shell comparison-table-shell v2c-table">
               <table class="comparison-table">
                 <thead>
                   <tr>
@@ -694,7 +704,7 @@
           </section>
         </div>
 
-        <section id="tableSection" class="results-shell workspace-wide-shell" aria-labelledby="tableHeading">
+        <section id="tableSection" class="results-shell workspace-wide-shell v2c-card" aria-labelledby="tableHeading">
           <div class="results-block-head">
             <div>
               <p class="section-kicker">Amortization table</p>
@@ -708,7 +718,7 @@
             <div id="schedulePreviewNote" class="muted small-copy" aria-live="polite"></div>
             <button id="scheduleToggleBtn" class="btn btn-tertiary" type="button">Show full schedule</button>
           </div>
-          <div class="table-shell">
+          <div class="table-shell v2c-table">
             <table class="amortization-table">
               <thead>
                 <tr>
@@ -727,7 +737,7 @@
         </section>
       </section>
 
-      <section id="reportSection" class="panel report-panel" aria-labelledby="reportHeading">
+      <section id="reportSection" class="panel report-panel v2c-surface" aria-labelledby="reportHeading">
         <div class="panel-header no-print">
           <div>
             <p class="section-kicker">Print-friendly report</p>
@@ -794,7 +804,7 @@
         </article>
       </section>
 
-      <section id="learn" class="panel no-print" aria-labelledby="learnHeading">
+      <section id="learn" class="panel no-print v2c-surface" aria-labelledby="learnHeading">
         <div class="panel-header">
           <div>
             <p class="section-kicker">Learn</p>
@@ -848,7 +858,7 @@
         </div>
       </section>
 
-      <section class="panel" aria-labelledby="canadaContextHeading-loan">
+      <section class="panel v2c-surface" aria-labelledby="canadaContextHeading-loan">
         <div class="panel-header">
           <div>
             <p class="section-kicker">Canadian context</p>
@@ -876,7 +886,7 @@
       </section>
 
 
-      <section class="panel no-print" aria-labelledby="faqHeading">
+      <section class="panel no-print v2c-surface" aria-labelledby="faqHeading">
         <div class="panel-header">
           <div>
             <p class="section-kicker">FAQ</p>
@@ -909,11 +919,14 @@
       </section>
 
       <div data-simplekit-support></div>
-      <div data-simplekit-footer></div>
+      
     </main>
   </div>
 
   <script type="module" src="https://core.simplekit.app/core.js"></script>
   <script src="./assets/js/app.js" defer></script>
+
+<footer class="v2s-footer"><div class="v2s-wrap v2s-footer-inner"><div class="v2s-stack"><strong>SimpleKit</strong><p class="v2s-help">Free planning tools with clearer next steps.</p></div><div class="v2s-stack"><nav aria-label="Footer navigation"><a href="/tools/">Tools</a><a href="/learn/">Learn</a><a href="/methodology/">Methodology &amp; sources</a><a href="/privacy/">Privacy</a><a href="/support/">Support</a></nav><p class="v2s-help">Estimates for planning, not financial advice. Financial inputs stay in your browser; existing site analytics are described in our privacy policy.</p></div></div></footer>
+<script defer src="https://core.simplekit.app/v2/calculators.js"></script>
 </body>
 </html>
