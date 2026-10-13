@@ -128,11 +128,12 @@
 <a class="v2s-skip v2-button" href="#mainContent">Skip to content</a>
 <header class="v2s-header"><div class="v2s-wrap v2s-header-inner"><a class="v2s-brand" href="/" aria-label="SimpleKit home"><svg aria-hidden="true" focusable="false"><use href="https://core.simplekit.app/v2/icons/sprite.svg#calculator"></use></svg>SimpleKit</a><button type="button" class="v2s-menu" data-v2s-menu aria-controls="v2-loan-calculator-nav" aria-expanded="false" hidden>Menu</button><nav class="v2s-nav" id="v2-loan-calculator-nav" aria-label="Main navigation"><a href="/">Home</a><a href="/tools/" aria-current="page">Tools</a><a href="/learn/">Learn</a><a href="/about/">About</a><a href="/support/">Support</a></nav></div></header>
 
-  
+
 
   <div class="page-shell loan-shell">
-    <header class="hero hero-loan v2c-hero" aria-labelledby="pageTitle">
-      
+    <nav class="v2s-breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/tools/">Tools</a></li><li><span aria-current="page">Loan Calculator Canada</span></li></ol></nav>
+<header class="hero hero-loan v2c-hero" aria-labelledby="pageTitle">
+
 
       <div class="hero-copy">
         <p class="eyebrow">SimpleKit Loan Calculator</p>
@@ -143,12 +144,12 @@
           <a class="btn btn-primary" href="#workspace">Start with a loan scenario</a>
           <a class="btn btn-secondary" href="#quickGuide">See how it works</a>
         </div>
-        <div class="hero-trust-row" aria-label="Loan calculator highlights">
+        <details class="v2c-context"><summary>About this tool</summary><div class="hero-trust-row" aria-label="Loan calculator highlights">
           <span>Loan payment calculator</span>
           <span>Amortization schedule calculator</span>
           <span>Loan comparison calculator</span>
           <span>Extra payment modeling</span>
-        </div>
+        </div></details>
       </div>
 
       <aside class="hero-side">
@@ -179,62 +180,9 @@
     </header>
 
     <main id="mainContent" class="page-flow v2c-main" tabindex="-1">
-      <section class="panel intro-panel no-print v2c-surface" aria-labelledby="introHeading">
-        <div class="panel-header">
-          <div>
-            <p class="section-kicker">What this calculator does</p>
-            <h2 id="introHeading">Model loan payments, compare offers, and see the full payoff story</h2>
-          </div>
-          <p>
-            This loan payment calculator helps you estimate regular payments, understand how amortization works,
-            compare multiple financing options, and see how recurring extra payments or lump sums can reduce interest.
-          </p>
-        </div>
-        <div class="feature-grid">
-          <article>
-            <span class="trust-label">Calculator</span>
-            <strong>Live payment and payoff estimates</strong>
-            <p>See payment amount, total interest, total paid, and payoff date update instantly as you edit assumptions.</p>
-          </article>
-          <article>
-            <span class="trust-label">Comparison</span>
-            <strong>Scenario-based decision support</strong>
-            <p>Create several loan scenarios, duplicate them, and compare costs, timing, and savings in one place.</p>
-          </article>
-          <article>
-            <span class="trust-label">Reporting</span>
-            <strong>Portable records and print output</strong>
-            <p>Export all scenarios as JSON, reload them later, and print a tidy PDF-ready loan report from the browser.</p>
-          </article>
-        </div>
-      </section>
 
-      <section id="quickGuide" class="panel quick-guide-panel no-print v2c-surface" aria-labelledby="quickGuideHeading">
-        <div class="panel-header">
-          <div>
-            <p class="section-kicker">Quick guide</p>
-            <h2 id="quickGuideHeading">A calmer way to use the calculator</h2>
-          </div>
-          <p>Start with the basics, then open the advanced sections only if you need them. The tool auto-saves on this browser as you work.</p>
-        </div>
-        <div class="feature-grid quick-guide-grid">
-          <article>
-            <span class="trust-label">Step 1</span>
-            <strong>Pick or create a scenario</strong>
-            <p>Use the scenario manager to compare a few loan options instead of overwriting one set of assumptions.</p>
-          </article>
-          <article>
-            <span class="trust-label">Step 2</span>
-            <strong>Enter amount, rate, and term</strong>
-            <p>Those three inputs create your first useful payment estimate. You can add fees, extra payments, or notes afterward.</p>
-          </article>
-          <article>
-            <span class="trust-label">Step 3</span>
-            <strong>Review results, then print or save</strong>
-            <p>Once the numbers look right, compare scenarios, save a scenarios file, or print a clean PDF-style report.</p>
-          </article>
-        </div>
-      </section>
+
+
 
       <section id="workspace" class="panel workspace-panel v2c-surface" aria-labelledby="workspaceHeading">
         <div class="panel-header">
@@ -919,12 +867,67 @@
       </section>
 
       <div data-simplekit-support></div>
-      
-    </main>
+
+    <section class="panel intro-panel no-print v2c-surface" aria-labelledby="introHeading">
+        <div class="panel-header">
+          <div>
+            <p class="section-kicker">What this calculator does</p>
+            <h2 id="introHeading">Model loan payments, compare offers, and see the full payoff story</h2>
+          </div>
+          <p>
+            This loan payment calculator helps you estimate regular payments, understand how amortization works,
+            compare multiple financing options, and see how recurring extra payments or lump sums can reduce interest.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <span class="trust-label">Calculator</span>
+            <strong>Live payment and payoff estimates</strong>
+            <p>See payment amount, total interest, total paid, and payoff date update instantly as you edit assumptions.</p>
+          </article>
+          <article>
+            <span class="trust-label">Comparison</span>
+            <strong>Scenario-based decision support</strong>
+            <p>Create several loan scenarios, duplicate them, and compare costs, timing, and savings in one place.</p>
+          </article>
+          <article>
+            <span class="trust-label">Reporting</span>
+            <strong>Portable records and print output</strong>
+            <p>Export all scenarios as JSON, reload them later, and print a tidy PDF-ready loan report from the browser.</p>
+          </article>
+        </div>
+      </section>
+<section id="quickGuide" class="panel quick-guide-panel no-print v2c-surface" aria-labelledby="quickGuideHeading">
+        <div class="panel-header">
+          <div>
+            <p class="section-kicker">Quick guide</p>
+            <h2 id="quickGuideHeading">A calmer way to use the calculator</h2>
+          </div>
+          <p>Start with the basics, then open the advanced sections only if you need them. The tool auto-saves on this browser as you work.</p>
+        </div>
+        <div class="feature-grid quick-guide-grid">
+          <article>
+            <span class="trust-label">Step 1</span>
+            <strong>Pick or create a scenario</strong>
+            <p>Use the scenario manager to compare a few loan options instead of overwriting one set of assumptions.</p>
+          </article>
+          <article>
+            <span class="trust-label">Step 2</span>
+            <strong>Enter amount, rate, and term</strong>
+            <p>Those three inputs create your first useful payment estimate. You can add fees, extra payments, or notes afterward.</p>
+          </article>
+          <article>
+            <span class="trust-label">Step 3</span>
+            <strong>Review results, then print or save</strong>
+            <p>Once the numbers look right, compare scenarios, save a scenarios file, or print a clean PDF-style report.</p>
+          </article>
+        </div>
+      </section>
+</main>
   </div>
 
-  <script type="module" src="https://core.simplekit.app/core.js"></script>
-  <script src="./assets/js/app.js" defer></script>
+<script type="module" src="https://core.simplekit.app/core.js"></script>
+<script src="./assets/js/app.js" defer></script>
 
 <footer class="v2s-footer"><div class="v2s-wrap v2s-footer-inner"><div class="v2s-stack"><strong>SimpleKit</strong><p class="v2s-help">Free planning tools with clearer next steps.</p></div><div class="v2s-stack"><nav aria-label="Footer navigation"><a href="/tools/">Tools</a><a href="/learn/">Learn</a><a href="/methodology/">Methodology &amp; sources</a><a href="/privacy/">Privacy</a><a href="/support/">Support</a></nav><p class="v2s-help">Estimates for planning, not financial advice. Financial inputs stay in your browser; existing site analytics are described in our privacy policy.</p></div></div></footer>
 <script defer src="https://core.simplekit.app/v2/calculators.js"></script>
